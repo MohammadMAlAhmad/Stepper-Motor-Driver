@@ -1,0 +1,68 @@
+(ExpressProject "7812"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\7812.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\7812-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\7812-schematic1-test.sim"
+        (DisplayName "SCHEMATIC1-Test")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\7812-schematic1-test.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (LastUsedLibraryBrowseDirectory "E:\Apps\Orcade\Capture\library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "E:\APPS\ORCADE\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "E:\APPS\ORCADE\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName "E:\APPS\ORCADE\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LM7812C
+      (FullPartName "LM7812C.Normal")
+      (LibraryName "E:\APPS\ORCADE\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\7812.dsn")
+      (Path "Design Resources" ".\7812.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources" ".\7812.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 395"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1376 52 538")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\MOHAMMAD AL-AHMAD\DESKTOP\WORKSHOP\ORCAD\LOUAY\7812.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

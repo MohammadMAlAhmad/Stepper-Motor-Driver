@@ -1,0 +1,17 @@
+.ALIASES
+V_V2            V2(+=VSS -=0 )
+R_Rsr           Rsr(1=N09769 2=VSS )
+R_Rdc           Rdc(1=N00548 2=V15 )
+C_Cop1          Cop1(1=N039952 2=N06430 )
+R_Rdt           Rdt(1=N00383 2=N00548 )
+C_Cop2          Cop2(1=0 2=N06446 )
+C_Cgt           Cgt(1=0 2=N00383 )
+C_Rcg           Rcg(1=0 2=N01335 )
+X_U3            U3(GND=0 TRIGGER=N00383 OUTPUT=N039952 RESET=N09769 CONTROL=N01335 THRESHOLD=N00383 DISCHARGE=N00548 VCC=V15 )
+V_V1            V1(+=V15 -=0 )
+R_R1            R1(1=0 2=N06446 )
+X_Dop2          Dop2(A=N06446 K=N06430 )
+X_Dop1          Dop1(A=N06430 K=0 )
+_    _(V15=V15)
+_    _(Vss=VSS)
+.ENDALIASES

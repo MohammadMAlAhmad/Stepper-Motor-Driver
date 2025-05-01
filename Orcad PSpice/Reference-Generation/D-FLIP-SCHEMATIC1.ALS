@@ -1,0 +1,17 @@
+.ALIASES
+V_V4            V4(+=N45274 -=0 )
+U_DSTM1          DSTM1(VCC=$G_DPWR GND=$G_DGND 1=N04872 )
+X_U3A           U3A(CLRbar=VCC D=N07339 CLK=N07265 PREbar=VCC Q=N10025 Qbar=N07339 VCC=$G_DPWR GND=$G_DGND )
+R_R35           R35(1=V-12 2=N45613 )
+V_V3            V3(+=V-12 -=0 )
+R_R15           R15(1=N45274 2=N45613 )
+R_R2            R2(1=N08578 2=N442430 )
+R_R3            R3(1=N10025 2=N442710 )
+V_V2            V2(+=VCC -=0 )
+R_R4            R4(1=V-12 2=N442430 )
+X_U2A           U2A(CLRbar=VCC D=N05075 CLK=N04872 PREbar=VCC Q=N08578 Qbar=N05075 VCC=$G_DPWR GND=$G_DGND )
+R_R5            R5(1=V-12 2=N442710 )
+X_UPSA          UPSA(A=N04872 Y=N07265 VCC=$G_DPWR GND=$G_DGND )
+_    _(Vcc=VCC)
+_    _(V-12=V-12)
+.ENDALIASES

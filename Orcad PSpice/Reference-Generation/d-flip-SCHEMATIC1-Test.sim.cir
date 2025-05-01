@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-Test"  [ c:\users\mohammad al-ahmad\desktop\workshop\orcad\me\d-flip\d-flip-schematic1-test.sim ] 
+
+** Creating circuit file "d-flip-schematic1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1s 0 
+.OPTIONS DIGINITSTATE= 0
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\d-flip-SCHEMATIC1.net" 
+
+
+.END

@@ -1,0 +1,14 @@
+* source 5551
+V_V2         VSS 0 5
+R_Rsr         N09769 VSS  100k  
+R_Rdc         N00548 V15  1k  
+C_Cop1         N039952 N06430  470.5u  
+R_Rdt         N00383 N00548  51k  
+C_Cop2         0 N06446  48u  
+C_Cgt         0 N00383  1n  
+C_Rcg         0 N01335  1n  
+X_U3         0 N00383 N039952 N09769 N01335 N00383 N00548 V15 555B
+V_V1         V15 0 16
+R_R1         0 N06446  1k  
+X_Dop2         N06446 N06430 D120NQ045 
+X_Dop1         N06430 0 D120NQ045 

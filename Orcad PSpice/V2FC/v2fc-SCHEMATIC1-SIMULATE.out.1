@@ -1,0 +1,104 @@
+
+**** 05/01/25 03:31:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIMULATE"  [ C:\Users\Mohammad Al-Ahmad\Desktop\workshop\orcad\me\v2fc-SCHEMATIC1-SIMULATE.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "v2fc-SCHEMATIC1-SIMULATE.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 50ms  0 10ns SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\v2fc-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING v2fc-SCHEMATIC1.net ****
+* source V2FC
+C_C         N00402 N00377  1u  
+R_Rd         N00460 N00402  470  
+R_R         N00942 N00402  2k  
+R_R1         N00520 N00607  4.7k  
+D_D1         N00460 N00607 D1N3911 
+R_R2         N00377 N00520  2k  
+D_D3         0 N09163 D1N4733 
+V_Vin         N00942 0 10
+V_V2         VCC+ 0 12
+X_U3A         0 N00402 V+12 V-12 N00377 TL074/301/TI
+R_R3         N00607 N09163  2.2k  
+V_V3         0 VCC- 12
+X_U4A         N00520 0 V+12 V-12 N00607 TL074/301/TI
+
+**** RESUMING v2fc-SCHEMATIC1-SIMULATE.sim.cir ****
+.END
+
+**** 05/01/25 03:31:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIMULATE"  [ C:\Users\Mohammad Al-Ahmad\Desktop\workshop\orcad\me\v2fc-SCHEMATIC1-SIMULATE.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N3911         D1N4733         X_U3A.DX        X_U4A.DX        
+          IS   20.070000E-15    1.214000E-15  800.000000E-18  800.000000E-18 
+         ISR  825.800000E-09    2.601000E-09                                 
+         IKF    2.963                                                        
+          BV                    5.1                                          
+         IBV                     .70507                                      
+         NBV                     .74348                                      
+        IBVL                    4.827400E-03                                 
+        NBVL                    6.7393                                       
+          RS    3.842000E-03    1.078                                        
+          TT  369.900000E-09                                                 
+         CJO  111.700000E-12  185.000000E-12                                 
+          VJ     .75             .75                                         
+           M     .2683           .3509                                       
+        TBV1                  176.471000E-06                                 
+
+
+**** 05/01/25 03:31:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SIMULATE"  [ C:\Users\Mohammad Al-Ahmad\Desktop\workshop\orcad\me\v2fc-SCHEMATIC1-SIMULATE.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3A.JX        X_U4A.JX        
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  270.100000E-06  270.100000E-06 
+          IS   15.000000E-12   15.000000E-12 
+
+
+I/O ERROR -- Probe file size exceeds 2000000000
+
+          JOB ABORTED
+
+          TOTAL JOB TIME          210.05
+

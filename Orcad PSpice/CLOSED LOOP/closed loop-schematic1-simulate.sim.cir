@@ -1,0 +1,17 @@
+** Profile: "SCHEMATIC1-SIMULATE"  [ c:\users\mohammad al-ahmad\desktop\workshop\orcad\louay\closed loop\closed loop-schematic1-simulate.sim ] 
+
+** Creating circuit file "closed loop-schematic1-simulate.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\closed loop-SCHEMATIC1.net" 
+
+
+.END

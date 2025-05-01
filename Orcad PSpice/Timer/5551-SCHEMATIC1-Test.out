@@ -1,0 +1,121 @@
+
+**** 05/01/25 02:23:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test"  [ c:\users\mohammad al-ahmad\desktop\workshop\orcad\louay\5551-schematic1-test.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "5551-schematic1-test.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 500m 0 SKIPBP 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\5551-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING 5551-SCHEMATIC1.net ****
+* source 5551
+V_V2         VSS 0 5
+R_Rsr         N09769 VSS  100k  
+R_Rdc         N00548 V15  1k  
+C_Cop1         N039952 N06430  470.5u  
+R_Rdt         N00383 N00548  51k  
+C_Cop2         0 N06446  48u  
+C_Cgt         0 N00383  1n  
+C_Rcg         0 N01335  1n  
+X_U3         0 N00383 N039952 N09769 N01335 N00383 N00548 V15 555B
+V_V1         V15 0 16
+R_R1         0 N06446  1k  
+X_Dop2         N06446 N06430 D120NQ045 
+X_Dop1         N06430 0 D120NQ045 
+
+**** RESUMING 5551-schematic1-test.sim.cir ****
+.END
+
+**** 05/01/25 02:23:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test"  [ c:\users\mohammad al-ahmad\desktop\workshop\orcad\louay\5551-schematic1-test.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Dop2.DFWD     X_Dop2.DLEAK    X_Dop1.DFWD     X_Dop1.DLEAK    
+          IS   11.137170E-06  186.070200E-12   11.137170E-06  186.070200E-12 
+           N     .520057       99.2231           .520057       99.2231       
+         ISR  225.763900E-12                  225.763900E-12                 
+         IKF  184.112000E-06                  184.112000E-06                 
+          BV   44.905         100.000000E+03   44.905         100.000000E+03 
+         IBV    2.586700E-03    1.000000E-03    2.586700E-03    1.000000E-03 
+          RS    1.020740E-03     .1             1.020740E-03     .1          
+         CJO   11.509000E-09                   11.509000E-09                 
+          VJ     .75                             .75                         
+           M     .49488                          .49488                      
+          EG     .69             .69             .69             .69         
+         XTI    2               2               2               2            
+
+
+**** 05/01/25 02:23:00 ********* PSpice 9.2 (Mar 2000) ******** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Test"  [ c:\users\mohammad al-ahmad\desktop\workshop\orcad\louay\5551-schematic1-test.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.qnpn555    X_U3.qpnp555    
+               NPN             PNP             
+          IS   14.340000E-15  650.600000E-18 
+          BF   65.62           70.35         
+          NF    1               1            
+         VAF   74.03          115.7          
+         IKF     .02             .02         
+         ISE   19.480000E-15  180.500000E-15 
+          NE    1.208           1.829        
+          BR    9.715           4.146        
+          NR    1               1            
+          RB   10              10            
+          RC    1                .715        
+         CJE   40.000000E-12   40.000000E-12 
+         MJE     .377            .3357       
+         CJC   40.000000E-12   40.000000E-12 
+         MJC     .3416           .5383       
+          TF    1.000000E-09    1.000000E-09 
+         XTF    3               1.7          
+         VTF    1.7             5            
+         ITF     .6              .65         
+          TR   58.980000E-09  119.900000E-09 
+         XTB    1.5             1.5          
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME          302.92
+
